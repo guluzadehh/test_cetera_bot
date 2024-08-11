@@ -8,7 +8,7 @@ from aiogram.enums import ParseMode
 from app.handlers import router
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(verbose=True, override=True)
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 

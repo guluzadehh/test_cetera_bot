@@ -3,9 +3,10 @@ import os
 from aiogram.types import Message
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(verbose=True, override=True)
 
 TIMEOUT = int(os.getenv("TIMEOUT"))
+print(TIMEOUT)
 
 
 async def timeout_reply(message: Message):
